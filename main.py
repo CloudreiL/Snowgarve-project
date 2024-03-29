@@ -1,5 +1,5 @@
 import pygame
-from level1 import runlevel
+
 def main_menu():
     pygame.init()
 
@@ -55,4 +55,6 @@ def main_menu():
                     button_start.action()
                     break
         pygame.display.update()
-main_menu()
+
+if __name__ == "__main__":
+    main_menu()
