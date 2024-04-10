@@ -315,7 +315,7 @@ def runlevel():
         def is_clicked(self, mouse_pos):
             return pygame.Rect(self.position, (200, 50)).collidepoint(mouse_pos)
 
-    ##level_music.play()
+    level_music.play()
     button_restart = None
     button_menu = None
 
@@ -423,7 +423,7 @@ def runlevel():
                 slime.player_damage(player_hp)
         else:
             screen.blit(pygame.transform.scale(laying_scroll, (70, 30)), (scroll_x, scroll_y))
-            screen.blit(tutorial_text, (10, 0))
+            screen.blit(tutorial_text, (10, 670))
             if keys[pygame.K_e] and abs(player_x + 50 > scroll_x > player_x - 50):
                 if not is_e_pressed:
                     is_e_pressed = True
@@ -563,12 +563,12 @@ def runlevel():
                 break
             if event.type == pygame.MOUSEBUTTONDOWN:
                 if button_restart is not None and button_restart.is_clicked(pygame.mouse.get_pos()):
-                    ##level_music.stop()
+                    level_music.stop()
                     button_restart.action()
                 elif button_menu is not None:
                     if button_menu.is_clicked(pygame.mouse.get_pos()):
                         button_menu.action()
                         break
-        
+
         from main import main_menu
         clock.tick(60)

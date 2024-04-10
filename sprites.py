@@ -1,6 +1,10 @@
 import pygame
 
 
+menu_back = pygame.image.load("assets/backgrounds/menu_back/null_background.jpg")
+
+telegram = pygame.image.load("assets/images/social_media/telegram.png")
+
 ##Игрок
 
 stand_right = [
