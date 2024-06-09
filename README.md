@@ -15,3 +15,5 @@ E - interuct with items
 
 
 Telegram channel with updates: https://t.me/snowgravedev
+
+![alt text](2024-06-09-14-57-15.gif)
